@@ -9,7 +9,7 @@ class MNHideCommentName extends \Shopware\Components\Plugin
 
 	public function activate(ActivateContext $context)
 	{
-		$context->scheduleClearCache(ActivateContext::CACHE_LIST_DEFAULT);
+		$context->scheduleClearCache(ActivateContext::CACHE_LIST_ALL);
 	}
 
 	public static function getSubscribedEvents()
